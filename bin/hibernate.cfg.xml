@@ -8,6 +8,7 @@
   <property name="hibernate.connection.username">root</property>
   <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
   <property name="hibernate.connection.pool_size">1</property>
+  <property name="hibernate.connection.password">1234</property>
   <mapping class="Real_Estate_Pack.Owner" package="Real_Estate_Pack" resource="Real_Estate_Pack/Owner.hbm.xml"/>
   <mapping class="Real_Estate_Pack.Property" package="Real_Estate_Pack" resource="Real_Estate_Pack/Property.hbm.xml"/>
  </session-factory>
