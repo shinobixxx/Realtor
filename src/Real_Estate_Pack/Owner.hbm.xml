@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 7, 2015 10:53:34 PM by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+ <class name="Real_Estate_Pack.Owner" table="owner">
+  <id access="field" name="id" type="int">
+   <column name="id"/>
+   <generator class="native"/>
+  </id>
+  <property access="field" generated="never" lazy="false" name="name" type="java.lang.String">
+   <column name="name"/>
+  </property>
+  <property access="field" generated="never" lazy="false"
+   name="lastname" type="java.lang.String">
+   <column name="lastname"/>
+  </property>
+  <property access="field" generated="never" lazy="false" name="phone" type="java.lang.String">
+   <column name="phone"/>
+  </property>
+ </class>
+</hibernate-mapping>
