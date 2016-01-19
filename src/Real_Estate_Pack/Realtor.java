@@ -129,7 +129,7 @@ public class Realtor extends JFrame implements ActionListener  {
 		contentPane.add(address, "4, 14, fill, top");
 		address.setColumns(10);
 		
-		JLabel label_5 = new JLabel("\u039C\u03AD\u03B3\u03B5\u03B8\u03BF\u03C2 :");
+		JLabel label_5 = new JLabel("\u03A4\u03B5\u03C4\u03C1\u03B1\u03B3\u03C9\u03BD\u03B9\u03BA\u03AC :");
 		contentPane.add(label_5, "2, 16, fill, center");
 		
 		size = new JTextField();
