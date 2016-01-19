@@ -31,6 +31,7 @@ public class Realtor extends JFrame implements ActionListener  {
 	private JTextField bedrooms;
 	private JTextField wc;
 	private Controller ctrl = new Controller();
+	private JLabel resultPanel;
 
 	/**
 	 * Launch the application.
@@ -153,7 +154,7 @@ public class Realtor extends JFrame implements ActionListener  {
 		JButton save = new JButton("\u0391\u03C0\u03BF\u03B8\u03AE\u03BA\u03B5\u03C5\u03C3\u03B7");
 		contentPane.add(save, "2, 22, fill, top");
 		
-		JLabel resultPanel = new JLabel("");
+		resultPanel = new JLabel("");
 		contentPane.add(resultPanel, "4, 22, fill, center");
 		
 		
@@ -168,6 +169,8 @@ public class Realtor extends JFrame implements ActionListener  {
 		Property tempProperty = ctrl.createProperty(type.getText(), address.getText(), Integer.parseInt(size.getText()), Integer.parseInt(bedrooms.getText()), Integer.parseInt(wc.getText()), tempOwner);
 				
 		ctrl.saveProperty(tempOwner, tempProperty);
+		resultPanel.setText("Done!!!");
+		
 	}
 
 }
