@@ -11,18 +11,21 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 public class Controller {
+	private Owner tempO;
+	private Property tempP;
 	
-	public Controller(){
-		
+	public Controller(){	
 	}
 		
 	public Owner createOwner(String _name, String _lastname, String _phone){
-		return (new Owner(_name, _lastname, _phone));
+		tempO =  new Owner(_name, _lastname, _phone);
+		return (tempO);
 	}
 	
 	public Property createProperty(String _type, String _address, int _size, int _bedrooms, int _bathrooms, Owner _owner)
 	{
-		return (new Property(_bedrooms, _bathrooms, _size, _type, _address, _owner));
+		tempP = new Property(_bedrooms, _bathrooms, _size, _type, _address, _owner);
+		return (tempP);
 	}
 	
 	public void saveProperty(Owner owner, Property property) {
